@@ -1,0 +1,41 @@
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#output {
+    
+}
+
+label {
+  font-size: 50px;
+}
+
+input {
+  font-size: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+
+button {
+  background-color: rgb(51, 35, 49);
+  color: white;
+  font-size: 50px;
+}
+
+button:hover {
+  background-color: purple;
+}
+
+h2 {
+  color: black;
+  font-size: 50px;
+}
+
+p {
+  color: black;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}

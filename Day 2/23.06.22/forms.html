@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+
+    <style>
+      #m {
+        color: blue;
+      }
+      #f {
+        color: rgb(227, 117, 135);
+      }
+      body {
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+      }
+
+      div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        background-color: #b0e0e6;
+      }
+      form {
+        text-align: center;
+      }
+
+      label {
+        font: bold;
+        font-size: large;
+      }
+      input {
+        background-color: black;
+        color: white;
+      }
+      input:hover {
+        background-color: red;
+      }
+      input::content {
+        color: purple;
+      }
+      h1 {
+        font: bolder;
+      }
+      h2 {
+        font-style: italic;
+      }
+      table {
+        transform: skew(9deg);
+      }
+      em {
+        color: #0094ff;
+      }
+      /* Descendent combinator: more specific */
+      p em {
+        color: #ff0000;
+      }
+      /* Direct child */
+      body > footer {
+        color: #00ff21;
+      }
+      /* Adjacent-sibling combinator  */
+      h2 + p {
+        color: #4800ff;
+      }
+      /* all siblings  */
+      h2 ~ p {
+        background-color: #808080;
+      }
+      /* p:hover -- pseduo class  */
+      p.hover:hover {
+        background-color: #ffd800;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="index.html" method="post">
+        <h1>Sign Up</h1>
+
+        <fieldset style="width: 25%">
+          <h2>Your Basic Info</h2>
+          <table style="background-color: aqua">
+            <tr>
+              <td>
+                <label for="name">Name:</label>
+              </td>
+
+              <td>
+                <input type="text" id="name" name="user_name" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="email">Email:</label>
+              </td>
+              <td>
+                <input type="email" id="mail" name="user_email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">Password:</label>
+              </td>
+              <td>
+                <input type="password" id="password" name="user_password" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>Gender:</label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  id="m_gender"
+                  value="m_gender"
+                  name="gender"
+                />
+                <label id="m" for="m_gender">Male</label>
+
+                <input
+                  type="radio"
+                  id="f_gender"
+                  value="f_gender"
+                  name="gender"
+                />
+                <label id="f" for="f_gender">Female</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <article>
+        <h2>Article</h2>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <footer>Article footer</footer>
+      </article>
+
+      <footer>Body footer</footer>
+
+      <p class="hover">hover me</p>
+
+      <article>
+        <h2>Article</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <blockquote>Quote</blockquote>
+        <p>Paragraph 3</p>
+        <footer>Article footer</footer>
+      </article>
+      <footer>Body footer</footer>
+    </div>
+  </body>
+</html>

@@ -6,69 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <style>
-      body {
-        margin-left: 20%;
-        
-      }
-
-      label {
-        font-size: 50px;
-      }
-
-      input {
-        font-size: 50px;
-      }
-
-      button {
-        background-color: darkslategray;
-        color: white;
-        font-size: 50px;
-      }
-
-      button:hover {
-        background-color: purple;
-      }
-
-      h2 {
-        color: black;
-        font-size: 50px;
-      }
-
-      p {
-        color: black;
-        margin-top: 0%;
-        margin-bottom: 0%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     
     <input type="text" name="" id="counterInput" />
     <br />
+    <div id="buttons">
     <button id="one" onclick="one()">1</button>
     <button id="two" onclick="two()">2</button>
     <button id="three" onclick="three()">3</button>
     <button id="plus" onclick="plus()">+</button>
-    <br />
     <button id="four" onclick="four()">4</button>
     <button id="five" onclick="five()">5</button>
     <button id="six" onclick="six()">6</button>
     <button id="minus" onclick="minus()">-</button>
-    <br />
     <button id="seven" onclick="seven()">7</button>
     <button id="eight" onclick="eight()">8</button>
     <button id="nine" onclick="nine()">9</button>
     <button id="divide" onclick="divide()"> / </button>
-    <br />
     <button id="clearCalculator" onclick="clearCalculator()">C</button>
     <button id="zero" onclick="zero()">0</button>
     <button id="equals" onclick="equals()">=</button>
     <button id="multiply" onclick="multiply()">*</button>
-    <br />
+    </div>
     <div id="output">
       <h2>History:</h2>
+      <br/>
     </div>
 
     <script src="./index.js"></script>

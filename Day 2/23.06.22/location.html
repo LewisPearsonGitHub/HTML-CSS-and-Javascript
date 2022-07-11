@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var data = {
+"name": "Pikachu",
+"age" : 102,
+"money" : "$1",
+"location" : { "lat" : 65.003, "lon": 33.11},
+"isHungry" : true
+}
+alert(data.name);
+alert(data.isHungry);
+const mylocation = JSON.stringify(data);
+alert(mylocation);
+document.cookie = mylocation
+
+window.location.href = 'location2.html';
+</script>
+</head>
+<body>
+</body>
+</html>
