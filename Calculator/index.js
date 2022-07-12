@@ -10,55 +10,9 @@ let num1 = 0;
 let num2 = 0;
 let operator ="";
 
-const zero = () => {
+const numberInput = (event) => {
     const num = counterValue.value;
-    counterValue.value = num+0;
-}
-
-const one = () => {
-    const num = counterValue.value;
-    counterValue.value = num +1;
-}
-
-const two = () => {
-    const num = counterValue.value;
-    counterValue.value = num +2;
-}
-
-const three = () => {
-    const num = counterValue.value;
-    counterValue.value = num +3;
-}
-
-const four = () => {
-    const num = counterValue.value;
-    counterValue.value = num +4;
-}
-
-const five = () => {
-    const num = counterValue.value;
-    counterValue.value = num +5;
-}
-
-const six = () => {
-    const num = counterValue.value;
-    counterValue.value = num +6;
-}
-
-const seven = () => {
-    const num = counterValue.value;
-    counterValue.value = num +7;
-}
-
-const eight = () => {
-    const num = counterValue.value;
-    counterValue.value = num +8;
-}
-
-const nine = () => {
-    const num = counterValue.value;
-    counterValue.value = num +9;
-    
+    counterValue.value = num+event.target.innerText;
 }
 
 const clearCalculator = () => {
