@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <style> 
-
-    body {
-        
+    <style>
+      body {
         margin-left: 20%;
-               
-    }
-    label {
+      }
+
+      label {
         font-size: 50px;
-    }
-    input {
+      }
+
+      input {
         font-size: 50px;
-    }
-    button {
+        width: 100%;
+        background-color: black;
+        color:white;
+      }
+
+      button {
         background-color: darkslategray;
         color: white;
         font-size: 50px;
+        display: inline-block;
+        border-radius: 50%;
+      }
 
-    }
-    button:hover{
+      button:hover {
         background-color: purple;
-    }
-    h2{
+      }
+
+      h2 {
         color: black;
         font-size: 50px;
-    }
-    p {
-        color:black;
-        margin-top:0%;
-        margin-bottom:0%;
-    }
+      }
 
-    
+      p {
+        color: black;
+        margin-top: 0%;
+        margin-bottom: 0%;
+      }
     </style>
+  </head>
 
-
-
-</head>
-<body>
+  <body>
     <label for="counter">Counter:</label>
-    <input type="number" name="" id="counterInput">
-    <br>
+    <input type="number" name="" id="counterInput" />
+    <br />
     <button id="minusFive" onclick="minusFive()">-5</button>
-    <button id="minuesOne" onclick="minusOne()">-1</button>
+    <button id="minusOne" onclick="minusOne()">-1</button>
     <button id="Reset" onclick="reset()">Reset</button>
     <button id="addOne" onclick="addOne()">+1</button>
     <button id="addFive" onclick="addFive()">+5</button>
-<br>
+    <br />
     <div id="output">
-        <h2>History: </h2>
+      <h2>History:</h2>
     </div>
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
